@@ -1,0 +1,205 @@
+
+
+.site-header {
+    background-color: var(--color-beige);
+    padding: 1rem 0;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-list a {
+    font-weight: 600;
+    color: var(--color-dark-green);
+}
+
+.nav-list a.active {
+    color: var(--color-gold);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-light {
+    background-color: #ffffff;
+}
+
+.section-dark {
+    background-color: var(--color-dark-green);
+    color: var(--text-light);
+}
+
+.section-dark h2 {
+    color: var(--text-light);
+}
+
+
+.hero,
+.page-hero {
+    background-color: var(--color-dark-green);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero h1,
+.hero p,
+.page-hero h1,
+.page-hero p {
+    color: var(--text-light);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+.hero-status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #d4b26a; /* в цвет кнопок */
+  font-weight: 500;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+.site-footer {
+    background-color: var(--color-dark-green);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+@media (max-width: 992px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+/* Узкий контейнер для текста */
+.container.narrow {
+  max-width: 800px;
+}
+
+/* About hero */
+.about-hero img {
+  border-radius: 20px;
+}
+
+/* Философия */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.philosophy-grid h3 {
+  color: var(--color-gold);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+/* Контакты */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.map-wrapper {
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Увеличиваем картинку в hero */
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
